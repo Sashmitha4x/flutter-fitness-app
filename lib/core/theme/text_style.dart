@@ -7,9 +7,9 @@ class AppTextStyles {
   // Splash Screen Title
   static const TextStyle splashTitle = TextStyle(
     fontFamily: AppFonts.primary,
-    fontSize: 36,
-    fontWeight: FontWeight.normal,
-    color: AppColors.textPrimary,
+    fontSize: 34,
+    fontWeight: FontWeight.w400,
+    color: Color.fromRGBO(252, 247, 247, 1),
     height: 1.2,
   );
   // Button Text
@@ -19,14 +19,12 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.textPrimary,
   );
-  
   static const TextStyle buttonTextMedium = TextStyle(
     fontFamily: AppFonts.primary,
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.textPrimary,
   );
-
   // Chip Text
   static const TextStyle chipText = TextStyle(
     fontFamily: AppFonts.primary,
@@ -47,5 +45,4 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     color: Color(0xFF000000),
   );
-  
 }
