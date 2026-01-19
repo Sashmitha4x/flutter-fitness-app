@@ -15,31 +15,11 @@ class SplashScreen extends StatelessWidget {
         children: [
           // Background Image
           Positioned.fill(
-            child: SvgPicture.asset(
-              'assets/images/bg_image.svg', 
+            child: Image.asset(
+              'assets/images/bg_image.png',
               fit: BoxFit.cover,
-              
             ),
           ),
-
-          // Dark Overlay for better text readability
-          Positioned.fill(
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.transparent,
-                    Colors.black.withOpacity(0.7),
-                    Colors.black.withOpacity(0.9),
-                  ],
-                  stops: const [0.0, 0.6, 1.0],
-                ),
-              ),
-            ),
-          ),
-
           // Content
           SafeArea(
             child: Padding(
@@ -60,8 +40,7 @@ class SplashScreen extends StatelessWidget {
                   // Start Training Button
                   PrimaryButton(
                     text: 'Start Training',
-                    onPressed: () {
-                    },
+                    onPressed: () {},
                   ),
                   SizedBox(height: AppSizes.spaceXL),
                 ],
