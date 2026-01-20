@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task2_fitness_app/core/theme/app_sizes.dart';
-import 'package:task2_fitness_app/core/theme/colors.dart';
+import '../../../core/theme/app_sizes.dart';
+import '../../../core/theme/colors.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String text;
@@ -18,13 +18,13 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: isLoading ? null : onPressed,
-      behavior: HitTestBehavior.opaque, 
+      behavior: HitTestBehavior.opaque,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
             child: Container(
-              height: AppSizes.buttonHeight, 
+              height: AppSizes.buttonHeight,
               decoration: BoxDecoration(
                 color: AppColors.primaryButton,
                 borderRadius: BorderRadius.circular(AppSizes.radiusFull),
@@ -41,30 +41,30 @@ class PrimaryButton extends StatelessWidget {
                     )
                   : Text(
                       text,
-                      style: const TextStyle( 
-                        color: Color.fromARGB(255, 255, 255, 255),
+                      style: const TextStyle(
+                        color: Color(0xFFFFFFFF),
                         fontWeight: FontWeight.w400,
-                        fontSize: 18, 
+                        fontSize: 18,
                       ),
                     ),
             ),
           ),
           Container(
-            width: 12, 
-            height: 6, 
+            width: 12,
+            height: 6,
             color: AppColors.primaryButton,
           ),
           Container(
-            height: AppSizes.buttonHeight, 
-            width: AppSizes.buttonHeight, 
+            height: AppSizes.buttonHeight,
+            width: AppSizes.buttonHeight,
             decoration: const BoxDecoration(
               color: AppColors.primaryButton,
               shape: BoxShape.circle,
             ),
-            padding: const EdgeInsets.all(9), 
+            padding: const EdgeInsets.all(9),
             child: Container(
               decoration: const BoxDecoration(
-                color: AppColors.textPrimary, 
+                color: AppColors.textPrimary,
                 shape: BoxShape.circle,
               ),
               child: const Icon(

@@ -39,7 +39,8 @@ class AppSizes {
   static const double spaceS = 8.0;
   static const double spaceM = 16.0;
   static const double spaceL = 24.0;
-  static const double spaceXL = 32.0;
+  static const double spaceXL = 40.0;
+  static const double spaceXXL = 50.0;
 
   // Avatar & Thumbnail Sizes
   static const double thumbnailS = 60.0;
