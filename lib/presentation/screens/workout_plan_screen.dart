@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:task2_fitness_app/core/routes/app_router.dart';
 import 'package:task2_fitness_app/presentation/cards/round_card.dart';
 import 'package:task2_fitness_app/presentation/widgets/buttons/primary_button.dart';
 import 'package:task2_fitness_app/presentation/widgets/chips/category_chip.dart';
@@ -20,7 +22,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                 Stack(
                   children: [
                     SizedBox(
-                      width:  double.infinity,
+                      width: double.infinity,
                       child: Container(
                         height: 390,
                         decoration: const BoxDecoration(
@@ -35,7 +37,9 @@ class WorkoutPlanScreen extends StatelessWidget {
                       top: 40,
                       left: 16,
                       child: GestureDetector(
-                        onTap: () => Navigator.pop(context),
+                        onTap: () {
+                          context.go(AppRouter.dashboard);
+                        },
                         child: Container(
                           width: 40,
                           height: 40,
@@ -59,7 +63,7 @@ class WorkoutPlanScreen extends StatelessWidget {
                         style: const TextStyle(
                           color: Color(0xFFFFFFFF),
                           fontSize: 22,
-                          fontWeight: FontWeight.w400, 
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     ),

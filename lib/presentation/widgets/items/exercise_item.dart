@@ -60,7 +60,7 @@ class ExerciseItem extends StatelessWidget {
             onTap: onPressed,
             child: Container(
               width: 80,
-              height: 28,
+              height: 26,
               decoration: const BoxDecoration(
                 color: Color(0xFFE53935),
                 shape: BoxShape.circle,
@@ -68,7 +68,7 @@ class ExerciseItem extends StatelessWidget {
               child: const Icon(
                 Icons.play_arrow_rounded,
                 color: Color(0xFFFFFFFF),
-                size: 22,
+                size: 20,
               ),
             ),
           ),

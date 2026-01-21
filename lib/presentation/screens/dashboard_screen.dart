@@ -60,23 +60,26 @@ class DashboardScreen extends StatelessWidget {
                 style: AppTextStyles.sectionHeader,
               ),
               SizedBox(height: AppSizes.spaceM),
-              Row(
-                children: [
-                  RecommendedCard(
-                    imagePath: 'assets/images/recomended1.png',
-                    onTap: () {},
-                  ),
-                  SizedBox(width: AppSizes.spaceM),
-                  RecommendedCard(
-                    imagePath: 'assets/images/recomended2.png',
-                    onTap: () {},
-                  ),
-                  SizedBox(width: AppSizes.spaceM),
-                  RecommendedCard(
-                    imagePath: 'assets/images/recomended3.png',
-                    onTap: () {},
-                  ),
-                ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    RecommendedCard(
+                      imagePath: 'assets/images/recommended1.png',
+                      onTap: () {},
+                    ),
+                    SizedBox(width: AppSizes.spaceM),
+                    RecommendedCard(
+                      imagePath: 'assets/images/recommended2.png',
+                      onTap: () {},
+                    ),
+                    SizedBox(width: AppSizes.spaceM),
+                    RecommendedCard(
+                      imagePath: 'assets/images/recommended3.png',
+                      onTap: () {},
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: AppSizes.spaceXXL),
               PromoCard(
