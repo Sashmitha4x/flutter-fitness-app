@@ -21,7 +21,7 @@ class PromoCard extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        height: 130,
+        height: 120,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppSizes.radiusM),
           image: DecorationImage(
@@ -38,7 +38,7 @@ class PromoCard extends StatelessWidget {
                 title,
                 style: const TextStyle(
                   color: AppColors.textPrimary,
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),
                 textAlign: TextAlign.center,

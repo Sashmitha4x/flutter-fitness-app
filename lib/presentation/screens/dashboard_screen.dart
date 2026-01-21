@@ -17,7 +17,7 @@ class DashboardScreen extends StatelessWidget {
       backgroundColor: AppColors.primaryBackground,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(AppSizes.paddingS),
+          padding: EdgeInsets.all(AppSizes.paddingM),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

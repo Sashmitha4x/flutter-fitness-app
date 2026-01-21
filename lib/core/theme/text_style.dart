@@ -14,7 +14,7 @@ class AppTextStyles {
   );
   static const TextStyle dashboardGreeting = TextStyle(
     fontFamily: AppFonts.primary,
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: FontWeight.normal,
     color: AppColors.textPrimary,
     height: 1.3,
@@ -30,7 +30,7 @@ class AppTextStyles {
   // Section Headers
   static const TextStyle sectionHeader = TextStyle(
     fontFamily: AppFonts.primary,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: FontWeight.normal,
     color: AppColors.textPrimary,
   );

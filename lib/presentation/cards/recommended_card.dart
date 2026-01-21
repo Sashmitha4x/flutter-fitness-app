@@ -16,7 +16,7 @@ class RecommendedCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 125,
+        width: 120,
         height: 85,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppSizes.radiusM),

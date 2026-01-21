@@ -13,7 +13,6 @@ class WorkoutCard extends StatelessWidget {
     required this.onPressed,
     this.buttonColor,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(

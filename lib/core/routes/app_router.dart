@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../presentation/screens/dashboard_screen.dart';
 import '../../presentation/screens/splash_screen.dart';
+import '../../presentation/screens/workout_plan_screen.dart';
 
 class AppRouter {
   static const String splash = '/';
@@ -21,12 +22,11 @@ class AppRouter {
         name: 'dashboard',
         builder: (context, state) => const DashboardScreen(),
       ),
-      // Workout Plan Route (will be added in Phase 3)
-      // GoRoute(
-      //   path: workoutPlan,
-      //   name: 'workoutPlan',
-      //   builder: (context, state) => const WorkoutPlanScreen(),
-      // ),
+      GoRoute(
+        path: workoutPlan,
+        name: 'workoutPlan',
+        builder: (context, state) => const WorkoutPlanScreen(),
+      ),
     ],
     errorBuilder: (context, state) => Scaffold(
       body: Center(
