@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:task2_fitness_app/presentation/cards/workout_card.dart';
-import '../../../core/theme/colors.dart';
-import '../../../core/theme/app_sizes.dart';
-import '../../../core/routes/app_router.dart';
-import '../../core/theme/text_style.dart';
-import '../cards/promo_card.dart';
-import '../cards/recommended_card.dart';
+import 'package:task2_fitness_app/widgets/cards/workout_card.dart';
+import '../../core/theme/colors.dart';
+import '../../core/theme/app_sizes.dart';
+import '../../core/routes/app_router.dart';
+import '../core/theme/text_style.dart';
+import '../widgets/cards/promo_card.dart';
+import '../widgets/cards/recommended_card.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task2_fitness_app/presentation/widgets/items/exercise_item.dart';
+import 'package:task2_fitness_app/widgets/items/exercise_item.dart';
 
 class RoundCard extends StatelessWidget {
   final String roundTitle;

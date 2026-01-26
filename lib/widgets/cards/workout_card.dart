@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task2_fitness_app/presentation/widgets/buttons/simple_button.dart';
+import 'package:task2_fitness_app/widgets/buttons/simple_button.dart';
 import '../../../core/theme/app_sizes.dart';
 
 class WorkoutCard extends StatelessWidget {

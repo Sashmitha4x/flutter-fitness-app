@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task2_fitness_app/core/theme/text_style.dart';
-import '../../core/routes/app_router.dart';
-import '../../core/theme/app_sizes.dart';
+import '../core/routes/app_router.dart';
+import '../core/theme/app_sizes.dart';
 import '../widgets/buttons/primary_button.dart';
 
 class SplashScreen extends StatelessWidget {

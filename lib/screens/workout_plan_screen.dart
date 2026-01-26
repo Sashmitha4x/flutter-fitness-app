@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task2_fitness_app/core/routes/app_router.dart';
-import 'package:task2_fitness_app/presentation/cards/round_card.dart';
-import 'package:task2_fitness_app/presentation/widgets/buttons/primary_button.dart';
-import 'package:task2_fitness_app/presentation/widgets/chips/category_chip.dart';
-import '../../../core/theme/app_sizes.dart';
+import 'package:task2_fitness_app/widgets/cards/round_card.dart';
+import 'package:task2_fitness_app/widgets/buttons/primary_button.dart';
+import 'package:task2_fitness_app/widgets/chips/category_chip.dart';
+import '../../core/theme/app_sizes.dart';
 
 class WorkoutPlanScreen extends StatelessWidget {
   const WorkoutPlanScreen({super.key});
